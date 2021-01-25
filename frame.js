@@ -1,7 +1,6 @@
 function frame(words)
 {
     var wordsLength = words.length;
-    // get the length of  longest word
     var lenLongest = words[0].length;
     for(var i=1 ;i<wordsLength; i++)
     {
@@ -10,7 +9,6 @@ function frame(words)
             lenLongest = words[i].length;
         }
     }
-    //creating the first row of stars for our frame
     var firstRow = "";
     var firstRowLength = lenLongest + 4;
     for(var i = 0; i<firstRowLength; i++)
@@ -18,9 +16,6 @@ function frame(words)
         firstRow = firstRow + "*";
     }
     console.log(firstRow);
-    /*
-        Framing all words one by one
-    */
     for(var i = 0; i < wordsLength; i++)
     {
         var wordRow = "* " + words[i];
@@ -31,8 +26,6 @@ function frame(words)
         wordRow = wordRow + "*";
         console.log(wordRow)
     }
-    //Since the row of stars has been created, print it
     console.log(firstRow);
 }
-//testing frame
 frame(["Write","good","code","every","day"]);
