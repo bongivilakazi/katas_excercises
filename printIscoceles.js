@@ -1,4 +1,3 @@
-
 function iscoceles(number) {
   for (var i = 0; i < number; i++) {
     var str = "";
@@ -14,3 +13,5 @@ function iscoceles(number) {
 }
 
 iscoceles(8);
+
+
