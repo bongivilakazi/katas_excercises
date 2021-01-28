@@ -1,14 +1,13 @@
-
-
-function square(hashtags)
-{
- for(i=1; i<=hashtags; i++)                           
- {
-  for(j=1; j<=hashtags; j++)
-   console.log('#')
+function printSquare(symbol) {
+	for (var i = 0; i < symbol; i++) {
+		for (var j = 0; j < symbol; j++) {
+			console.log(' # ');
+		}
+		console.log('\n');
+	}
 }
-   console.log('<br/>')
-}
-square(5)
+
+printSquare(5);
+
 
 	
