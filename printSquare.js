@@ -1,13 +1,14 @@
-function printSquare(symbol) {
-	for (var i = 0; i < symbol; i++) {
-		for (var j = 0; j < symbol; j++) {
-			console.log(' # ');
-		}
-		console.log('\n');
-	}
+function printSquare(digit){
+    var pattern = "";
+    var k, j;
+    for (j = 0; j < digit; j++){
+        for (k = 0; k < digit; k++){
+            pattern = pattern + "#";
+        }
+        console.log(pattern);
+        pattern = "";
+    } 
 }
-
-printSquare(5);
-
+printSquare(4);
 
 	
