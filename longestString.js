@@ -13,7 +13,7 @@ function longestString(arr){
         } 
     }
 }
-longestString(["oop", "React", "learn"', "eat"])
+longestString(["oop", "React", "learn"', "eat"]);
 
 
 
