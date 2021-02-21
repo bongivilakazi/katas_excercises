@@ -1,22 +1,14 @@
-function joinArrays(arr1,arr2){
-    let firstArray = [];
-    let secondArray = [];
-    for(let i = 0; i < arr1.length ||i < arr2.length; i++){
-        firstArray = [arr1[i],arr2[i]];
-        secondArray.push(arr1);
-    }
-    let str = secondArray.join(','); 
-    let thirdArray = str.split(',');
+function combineTwoArrays(arr1, arr2) {
+	var combinedArray = [];
 
-    let combinedArray;
-    let mergedArray = [];
-    for(let j = 0; j < thirdArray.length; j++){
-        combinedArray = parseInt(thirdArray[j]);
-        newArray.push(combinedArray);
+	for (var i = 0; i < arr1.length; i++) {
+		combinedArray.push(arr1[i]);
+	}
+	for (var j = 0; j < arr2.length; j++) {
+		combinedArray.push(arr2[j]);
+	}
 
-    }
-    console.log(newArray);         
-    
+	return combinedArray.sort();
 }
-joinArrays([11,22,33], [1,2,3]);
 
+console.log(combineTwoArrays([11, 22, 33], [1, 2, 3]))
